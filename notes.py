@@ -21,7 +21,8 @@ class Commands:
 	def git checkout 가지이름: 브랜치 이동
 	def git checkout -b 가지이름: 생성+이동 한꺼번에
 		# add, commit, push origin 가지이름
-	def git pull: 현재 브랜치 내용 가져와
+	def git pull: 현재 브랜치 내용 가져와서 작업
 	def git merge 가지이름: 브랜치 병합
 	def git branch -d 가지이름: 브랜치 삭제
-	
+	# Misc
+	def git clone <url>: 원격 저장소 로컬에 다운로드
