@@ -13,5 +13,15 @@ class Commands:
 	def git config user.email "이메일": commit하는 이의 이메일
     def git add calculator.py: staging area에 추가
 	def git commit -m "메세지 입력": 메세지와 함께 commit
-
-		
+	def git status: 현재 상태 확인
+	def git remote add origin <url>: 원격 저장소 지정
+	def git push origin master: 원격 저장소에 저장
+	# Branches
+	def git branch 가지이름: 브랜치 생성
+	def git checkout 가지이름: 브랜치 이동
+	def git checkout -b 가지이름: 생성+이동 한꺼번에
+		# add, commit, push origin 가지이름
+	def git pull: 현재 브랜치 내용 가져와
+	def git merge 가지이름: 브랜치 병합
+	def git branch -d 가지이름: 브랜치 삭제
+	
