@@ -12,3 +12,9 @@ used to create FFT plot from audio files. Used for 감각및지각심리학 fina
 
 04 folder_maker.py
 used to automatically make folders with indices.
+
+05 fashionMNIST_classifier_OReilly_tutorial.ipynb
+tutorial from the book, <Strengthening Deep Neural Networks>
+
+06 rename_health.ipynb
+used to rename multiple video files
