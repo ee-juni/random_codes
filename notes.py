@@ -17,6 +17,8 @@ class Commands:
 		msg 없이 먼저 엔터 치고 입력해도 ㅇㅋ
 		i - 입력(INSERT)모드 진입
 		ESC, :wq - 엔터하면 커밋msg 저장
+		:q - quit
+	def git commit --amend: 최신 커밋 수정해서 신규 커밋으로 만들기 
 	def git status: 현재 상태 확인
 	def git remote add origin <url>: 원격 저장소 지정
 	def git push origin master: 원격 저장소에 저장
