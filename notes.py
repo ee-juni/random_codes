@@ -36,8 +36,10 @@ class Commands:
 	def git show 커밋hash: 파일 변화 확인. hash 앞 4자리만 써도 ㅇㅋ
 	def git add . 
 		git commit --amend
-	
+
+
 """
+
 커밋 메시지 가이드라인
 
 (1) 커밋 메시지의 제목과 상세 설명 사이에는 한 줄을 비워두세요.
