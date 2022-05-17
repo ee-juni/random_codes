@@ -5,9 +5,9 @@ Random codes for random stuff
 
 simple example code made to test Git/GitHub.
 
-## 02 notes.py
+## 02 git_notes.py
 
-notes taken while learning to using Git/GitHub, written in a code style.
+notes taken while learning to use Git/GitHub, written in a code style.
 
 ## 03 audio_fft_pplot.ipynb
 
