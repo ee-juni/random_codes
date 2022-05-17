@@ -33,9 +33,15 @@ class Commands:
 	# History
 	def git log: 커밋 히스토리 최신순으로 보기(커밋hash,author,date,msg), q로 exit
 		git log --pretty=online: 더 이쁘고 깔끔하게 한줄로 보기(hash,msg)
-	def git show 커밋hash: 파일 변화 확인. hash 앞 4자리만 써도 ㅇㅋ
-	def git add . 
-		git commit --amend
+	def git show 커밋hash(=커밋id): 파일 변화 확인. hash 앞 4자리만 써도 ㅇㅋ
+		# head - 가장 최근에 한 커밋
+	
+	# Misc
+	def git config alias.history 'log --pretty=oneline' : history라는 명령어 별칭 설정해주기
+	def git diff cmid_1 cmid2 (각각 4자리): 두 커밋 간의 차이 비교
+	def ls -al: list all files
+		
+	
 
 
 """
