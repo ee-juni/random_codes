@@ -9,7 +9,7 @@ def commit:
 
 class Commands:
 	def git clone <url>: 원격 저장소 로컬에 다운로드
-	def git init: 시작하겠다 -> repo생성. 
+	def git init: 시작하겠다 -> repo생성
 	def git config user.name "이름": commit하는 이의 이름
 	def git config user.email "이메일": commit하는 이의 이메일
 	def git add calculator.py: staging area에 추가
@@ -22,6 +22,7 @@ class Commands:
 	def git status: 현재 상태 확인
 	def git remote add origin <url>: 원격 저장소 지정
 	def git push origin master: 원격 저장소에 저장
+		
 	# Branches
 	def git branch 가지이름: 브랜치 생성
 	def git checkout 가지이름: 브랜치 이동
@@ -30,22 +31,25 @@ class Commands:
 	def git pull: 현재 브랜치 내용 가져와서 작업
 	def git merge 가지이름: 브랜치 병합
 	def git branch -d 가지이름: 브랜치 삭제
+
 	# History
 	def git log: 커밋 히스토리 최신순으로 보기(커밋hash,author,date,msg), q로 exit
 		git log --pretty=online: 더 이쁘고 깔끔하게 한줄로 보기(hash,msg)
 	def git show 커밋hash(=커밋id): 파일 변화 확인. hash 앞 4자리만 써도 ㅇㅋ
 		# head - 가장 최근에 한 커밋 가리킴. head 바꾸면 해당 commit의 working dir 불러옴
+		# 커밋id 대신 tag 사용 가능
 	def git reset --hard 커밋id: head 바꿈 -> 과거 커밋으로 아예 돌아가버려
 		--soft, --mixed
 		soft, mixed, hard 순으로 repo, staging area, working directory 순차누적포함적용
-		
-	
+		커밋id 대신 HEAD를 기준으로 바로 전 커밋(HEAD^)혹은 n번째 전 커밋(HEAD~n) 표기가능
+
 	# Misc
 	def git config alias.history 'log --pretty=oneline' : history라는 명령어 별칭 설정해주기
-	def git diff cmid_1 cmid2 (각각 4자리): 두 커밋 간의 차이 비교
+	def git diff 커밋id_1 커밋id_2 (각각 4자리): 두 커밋 간의 차이 비교
+	def git tag TagName 커밋id: 해당되는 커밋에 tag 달기
 	def ls -al: list all files
 	def cat: 파일읽기
-		
+	
 		
 	
 
