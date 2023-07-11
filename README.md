@@ -1,26 +1,30 @@
 # random_codes
 Random codes for random stuff
 
-## 01 calculator.py
+## calculator.py
 
 simple example code made to test Git/GitHub.
 
-## 02 git_notes.py
+## git_notes.py
 
 notes taken while learning to use Git/GitHub, written in a code style.
 
-## 03 audio_fft_pplot.ipynb
+## audio_fft_pplot.ipynb
 
 used to create FFT plot from audio files. Used for **감각및지각심리학** final paper.
 
-## 04 folder_maker.py
+## folder_maker.py
 
 used to automatically make folders with indices.
 
-## 05 fashionMNIST_classifier_OReilly_tutorial.ipynb
+## fashionMNIST_classifier_OReilly_tutorial.ipynb
 
 tutorial from the book, **Strengthening Deep Neural Networks**
 
-## 06 rename_health.ipynb
+## rename_health.ipynb
   
 used to rename multiple video files
+
+## cuda_memory.py
+
+includes functions to get CUDA device numbers(indices) list sorted in a fashion of 'most free' to 'least free' (in terms of GPU memory)
