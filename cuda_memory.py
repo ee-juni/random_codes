@@ -1,4 +1,6 @@
+# install via "pip install nvidia-ml-py3"
 import nvidia_smi
+
 import numpy as np
 
 def get_free():
