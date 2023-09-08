@@ -1,6 +1,10 @@
-# install via "pip install nvidia-ml-py3"
-import nvidia_smi
+# "pip install nvidia-ml-py3"
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "nvidia-ml-py3"])
 
+# Import modules
+import nvidia_smi
 import numpy as np
 
 def get_free():
