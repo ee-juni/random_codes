@@ -6,6 +6,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "nvidia-ml-py3"])
 # Import modules
 import nvidia_smi
 import numpy as np
+import os
 
 def get_free():
     '''
@@ -33,3 +34,8 @@ def get_sorted():
         freem[max_idx]=-1
     return l
 
+def set_device():
+    '''
+    Set CUDA_VISIBLE_DEVICES to the most free CUDA device
+    '''
+    os.environ['CUDA_VISIBLE_DEVICES']=str(get_sorted()[0])
