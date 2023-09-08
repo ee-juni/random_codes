@@ -34,8 +34,13 @@ def get_sorted():
         freem[max_idx]=-1
     return l
 
-def set_device():
+def set_device(num: int = 1):
     '''
     Set CUDA_VISIBLE_DEVICES to the most free CUDA device
     '''
-    os.environ['CUDA_VISIBLE_DEVICES']=str(get_sorted()[0])
+    if num<1 or not isinstance(num ,int):
+        raise TypeError("Number of devices must be a positive integer")
+    devices_string = ",".join([str(i) for i in get_sorted()][:num])
+    os.environ['CUDA_VISIBLE_DEVICES'] = devices_string
+    print("CUDA_VISBLE_DEVICES set to",devices_string)
+    
